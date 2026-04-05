@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mc_backround"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <!--Header-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Selamat Datang!"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="32dp">
+        </TextView>
+        <!--Isian-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="right">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="Masukan nama:">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/namaText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapSentences">
+                </EditText>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Masukan NIM:">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/nimNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number">
+                </EditText>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Masukan Program Studi:">
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/prodiSpin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown">
+                </Spinner>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Masukan Jenis Kelamin:">
+                </TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/btnMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Laki-Laki">
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/btnFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Perempuan">
+                    </RadioButton>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Masukan Hobi:">
+                </TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/checkMembaca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Membaca">
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/checkPrograming"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Programming">
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/checkOther"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lainnya">
+                    </CheckBox>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:text="Tampilkan Profil">
+            </Button>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20dp">
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
